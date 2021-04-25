@@ -30,9 +30,9 @@
             강의목록
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="lecture.html?lectureName=java">java</a>
-            <a class="dropdown-item" href="lecture.html?lectureName=css">css</a>
-            <a class="dropdown-item" href="lecture.html?lectureName=android">android</a>
+            <a class="dropdown-item" href="lecture.html?lectureName=java">계산기</a>
+            <a class="dropdown-item" href="lecture.html?lectureName=css">시계</a>
+            
           </div>
         </li>
         <li class="nav-item">
@@ -59,16 +59,15 @@
   <div class ="container">
     <div class ="row">
       <ul class = "list-group">
-        <a href = "#" class="list-group-item active"> 1강 Hello world</a>
-        <a href = "#" class="list-group-item"> 2강 변수 상수</a>
-        <a href = "#" class="list-group-item"> 3강 데이터 타입</a>
-        <a href = "#" class="list-group-item"> 4강 조건문과 반복문</a>
+        <a href = "/calculator.html" class="list-group-item"> 1강 계산기 프로그램</a>
+        <a href = "/clock.html" class="list-group-item"> 2강 아날로그 시계 프로그램</a>
+        
       </ul>
     </div>
     <div class = "row">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TIrV8lXDzBk"></iframe>
-      </div>
+      <!--
+
+      -->
     </div>
     <hr>
     <div class = "row">
@@ -83,16 +82,25 @@
     </div>
   </div>
   <div class="container">
-    <hr>
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label>댓글 : </label>
-          <textarea class = "form-control" name="" id="commentContent" rows="5" name = "commentContent"></textarea>
-          <br>
-          <button type="submit" class="btn pull-right">등록</button>
-        </div>
-      </form>
-      <hr>
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://exercise-7.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
   </div>
   <footer style= "background-color : #bbbbbb; color: #ffffff">

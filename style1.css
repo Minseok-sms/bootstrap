@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: skyblue
+}
+.buttons{
+    background-color : violet; 
+}
+input{
+    width : 50px;
+    height : 50px;
+    margin : 2px;
+    background-color : gray;
+}
+
+#display {
+    width : 300px;
+    text-align : right;
+    background-color : white;
+    font-size : 30px;
+    font-style : bold;
+}
